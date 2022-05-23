@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  border: none;
+}
+
+body {
+  background-image: linear-gradient(
+		135deg,
+		hsl(0, 0%, 100%),
+		hsl(0, 100%, 98%)
+	);
+  font-family:'Josefin Sans', sans-serif;
+}
+
+main.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/*left*/
+main.container section.left {
+  background-image: url('../images/bg-pattern-desktop.svg');
+  background-size: cover;
+  background-position: center center;
+  padding: 0 40px 40px;
+  width: 60%;
+}
+
+main.container section.left section.container-text {
+  max-width: 450px;
+  margin: auto;
+}
+
+/*right*/
+main.container section.right {
+  width: 40%;
+}
+
+main.container section.bg-image {
+  background-image: url('../images/hero-desktop.jpg');
+  background-size: cover;
+  background-position: center center; 
+}
+
+/*logo*/
+main.container section.left img.logo {
+  margin-top: 60px;
+  margin-bottom: 105px;
+  width: 170px;
+}
+
+main.container section.left section.container-text img.bg-moblie {
+  display: none;
+}
+
+main.container section.left section.container-text h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  color: hsl(0, 6%, 24%);
+  line-height: 1.1;
+	margin-bottom: 0;
+}
+
+main.container section.left section.container-text h1 span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+main.container section.left section.container-text p {
+  color: hsl(0, 36%, 70%);
+  line-height: 26px;
+  margin: 30px 0;
+  margin-bottom: 45px;
+}
+
+/*form*/
+main.container section.left section.container-text form {
+  position: relative;
+}
+
+main.container section.left section.container-text form input {
+  background-color: transparent;
+  border: 1px solid hsl(0, 36%, 70%);
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  height: 55px;
+  width: 100%;
+}
+
+main.container section.left section.container-text form input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+main.container section.left section.container-text form input:focus {
+  outline-color: hsl(0, 74%, 74%);
+}
+
+main.container section.left section.container-text form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px hsl(0, 0%, 100%) inset;
+}
+
+main.container section.left section.container-text form.error input{
+  border: 2px solid hsl(0, 93%, 68%);
+}
+
+main.container section.left section.container-text form button {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: -2px 11px 25px hsl(0, 36%, 70%, 0.5);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 15px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: opacity .2s ease;
+  width: 100px;
+}
+
+main.container section.left section.container-text form button:hover {
+  opacity: 0.6;
+}
+
+main.container section.left section.container-text form .error-icon {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 110px;
+}
+
+main.container section.left section.container-text form.error .error-icon {
+  display: block;
+}
+
+main.container section.left section.container-text form small {
+  color: hsl(0, 93%, 68%);
+  display: none;
+  margin-top: 13px;
+  margin-left: 30px;
+}
+
+main.container section.left section.container-text form.error small {
+  display: block;
+}
+
+footer {
+  width: 100%;
+}
+
+footer p.attribution {
+  font-size: 0.9rem;  
+  padding: 0 18%;
+  margin-top: -20px;
+  
+}
+
+.attribution a {
+  color: hsl(0, 36%, 70%);
+}
+ 
+/*responsive*/
+@media screen and (max-width: 600px){
+  main.container section.left section.container-text img.logo {
+    margin: 30px 0;
+    width: 100px;
+  }
+
+  main.container section.left section.container-text img.bg-moblie {
+    display: block;
+    margin-left: -25px;
+    margin-right: -25px;
+    width: calc(100% + 50px);
+  }
+
+	main.container section.left section.container-text h1 {
+    margin-top: 60px;
+    letter-spacing: 11px;
+		font-size: 40px;
+    text-align: center;
+	}
+
+  main.container section.left section.container-text p {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 90%;
+  }
+  
+  main.container section.left {
+    width: 100%;
+    padding: 0 25px 90px;
+  }
+
+  main.container section.right {
+    display: none;
+  }
+
+  footer {
+    width: 100%;
+  }
+  
+  footer p.attribution {
+    font-size: 76%;  
+    padding: 0 21px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+}
+
