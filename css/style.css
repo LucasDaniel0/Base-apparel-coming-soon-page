@@ -149,14 +149,13 @@ main.container section.left section.container-text form.error small {
 }
 
 footer {
-  width: 100%;
+  width: 60%;
 }
 
 footer p.attribution {
-  font-size: 0.9rem;  
-  padding: 0 18%;
+  font-size: 0.8rem;  
   margin-top: -20px;
-  
+  text-align: center; 
 }
 
 .attribution a {
@@ -164,7 +163,7 @@ footer p.attribution {
 }
  
 /*responsive*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 680px){
   main.container section.left section.container-text img.logo {
     margin: 30px 0;
     width: 100px;
@@ -172,9 +171,9 @@ footer p.attribution {
 
   main.container section.left section.container-text img.bg-moblie {
     display: block;
-    margin-left: -25px;
-    margin-right: -25px;
-    width: calc(100% + 50px);
+    margin-left: -27px;
+    margin-right: -27px;
+    width: calc(100% + 52px);
   }
 
 	main.container section.left section.container-text h1 {
@@ -182,6 +181,10 @@ footer p.attribution {
     letter-spacing: 11px;
 		font-size: 40px;
     text-align: center;
+	}
+
+  main.container section.left section.container-text {
+    max-width: 100%;
 	}
 
   main.container section.left section.container-text p {
@@ -202,13 +205,12 @@ footer p.attribution {
   footer {
     width: 100%;
   }
-  
+
   footer p.attribution {
     font-size: 76%;  
     padding: 0 21px;
     margin-top: 10px;
     text-align: center;
   }
-  
 }
 
